@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #000;
+  background-image: linear-gradient(to top right, #e2b810 0%, #ec3b05 100%);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap {
+  position: relative;
+  width: 800px;
+  display: flex;
+  box-shadow: 5px 5px 40px #000000a4;
+  border-radius: 10px;
+}
+.flex-el1 {
+  min-width: 400px;
+  height: 400px;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  background-color: rgba(255, 226, 194, 0.444);
+}
+.player-name1 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+.glasses1 {
+  margin-top: 30px;
+  font-size: 60px;
+  color: rgb(219, 128, 0);
+}
+.current-points {
+  display: inline-block;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: rgb(219, 128, 0);
+  border-radius: 10px;
+  color: #fff;
+}
+.title {
+  font-size: 15px;
+}
+.current-points1 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+.flex-el2 {
+  min-width: 400px;
+  height: 400px;
+  background-color: rgba(255, 226, 194, 0.444);
+  border-radius: 0 10px 10px 0;
+  text-align: center;
+}
+.player-name2 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+.glasses2 {
+  margin-top: 30px;
+  font-size: 60px;
+  color: rgb(219, 128, 0);
+}
+.current-points2 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/* Кнопки */
+
+.btn-new-game {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -60px;
+
+  color: #000;
+  background-color: #ffffffbc;
+  padding: 10px 50px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px #00000041;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn-new-game::before {
+  content: '';
+  display: block;
+  background-image: url('./svinka.png');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  position: absolute;
+  left: 19px;
+  top: 9px;
+}
+
+.btn-quit-cube {
+  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 280px;
+
+  color: #000;
+  background-color: #ffffffbc;
+  padding: 10px 50px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.btn-quit-cube::before {
+  content: '';
+  display: block;
+  background-image: url('./free-icon-dice-7101743.png');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  position: absolute;
+  left: 25px;
+  top: 7px;
+}
+
+.btn-stop-cube {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 330px;
+
+  color: #000;
+  background-color: #ffffffbc;
+  padding: 10px 50px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.btn-stop-cube::before {
+  content: '';
+  display: block;
+  background-image: url('./stop.png');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  position: absolute;
+  left: 25px;
+  top: 7px;
+}
+
+.btn-new-game:hover {
+  background-color: #ffffff;
+}
+.btn-quit-cube:hover {
+  background-color: #ffffff;
+}
+.btn-stop-cube:hover {
+  background-color: #ffffff;
+}
+
+.cube-img {
+  display: inline-block;
+  position: absolute;
+  width: 85px;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 95px;
+}
+
+.active1 {
+  background-color: rgba(255, 226, 194, 0.8);
+}
+.active2 {
+  background-color: rgba(255, 226, 194, 0.8);
+}
+
+.hidden {
+  display: none;
+}
