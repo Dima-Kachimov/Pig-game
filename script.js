@@ -148,4 +148,6 @@ btnNewGame.addEventListener('click', function () {
   document.querySelector('.current-points2').textContent = 0;
   document.querySelector('.current-points1').textContent = 0;
   cube.src = './dice1.png';
+  document.querySelector('.flex-el2').style.borderRadius = '0px 10px 10px 0px';
+  document.querySelector('.flex-el1').style.borderRadius = '10px 0px 0px 10px';
 });
