@@ -78,7 +78,7 @@ btnHold.addEventListener('click', function () {
       totalScorse[activePlayer];
 
     // 2. Если у активного игрока >= 100 (ПОБЕДА) если нет переключить игрока
-    if (totalScorse[activePlayer] >= 20) {
+    if (totalScorse[activePlayer] >= 50) {
       isPlaying = false;
       document
         .querySelector(`.player--${activePlayer}`)
