@@ -18,6 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 /* Layout */
@@ -36,7 +37,7 @@ main {
 
 .player {
   flex: 50%;
-  padding: 9rem;
+  padding: 9rem 6rem 6rem 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +81,7 @@ main {
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  width: 65%;
+  width: 55%;
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
@@ -163,6 +164,169 @@ main {
   color: #d50b0b;
 }
 
-.hidden{
+.hidden {
   display: none;
+}
+
+/* ======================================================= */
+.none {
+  display: none;
+}
+
+/* ======================================================= */
+
+.rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ee7d056f;
+  backdrop-filter: blur(3px);
+}
+.rules__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.rules__inner {
+  color: #fff;
+  background-color: #2f2f2f;
+  width: 800px;
+  height: 700px;
+  box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.384);
+  border-radius: 9px;
+  padding: 30px;
+  position: relative;
+}
+.rules__title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 37px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.rules__title h2::after {
+  content: '';
+  position: absolute;
+  background-image: url('./rules-icon.png');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  right: 150px;
+}
+.rules__content li {
+  list-style: none;
+  font-size: 27px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.rules__content li::before {
+  content: '';
+  position: absolute;
+  background-image: url('./rules-icon2.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+}
+.btn-rules {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.1s;
+
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+
+  padding: 2.5rem 5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+.btn-rules:active {
+  background-color: #ee7d05;
+}
+
+/* .btn-rules:active {
+  background-color: #ec3b05;
+  color: #e2b810;
+} */
+
+/* ======================================================= */
+
+.btn-wach-rules {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+
+  padding: 1rem 2.9rem 1rem 5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  /* position: relative; */
+}
+.btn-wach-rules:active {
+  transform: translateY(3px);
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3);
+}
+
+.btn-wach-rules::before {
+  content: '';
+  position: absolute;
+  background-image: url('./wach-rules.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  left: 11px;
+  top: 4px;
+}
+
+/* ======================================================= */
+.name {
+  position: relative;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+/* .name::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: -40px;
+  background-image: url('./edit.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+} */
+.name:hover {
+  transform: scale(1.1);
 }

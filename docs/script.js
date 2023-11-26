@@ -1,6 +1,11 @@
 'use strict';
 
 // Elements
+const namePlayers0 = document.querySelector('#name--0');
+const namePlayers1 = document.querySelector('#name--1');
+const wachRules = document.querySelector('.btn-wach-rules');
+const goToGame = document.querySelector('.btn-rules');
+const rulesGame = document.querySelector('.rules');
 const score0Element = document.getElementById('score--0');
 const score1Element = document.getElementById('score--1');
 const current0Element = document.getElementById('current--0');
@@ -86,7 +91,8 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
-      document.getElementById(`score--${activePlayer}`).textContent = 'Победа';
+      document.getElementById(`score--${activePlayer}`).textContent =
+        'Перемога';
       diceElement.classList.add('hidden');
     } else {
       switvhActivePlayer();
@@ -97,4 +103,24 @@ btnHold.addEventListener('click', function () {
 // Новая игра
 btnNew.addEventListener('click', function () {
   initGame();
+});
+
+/////////////////////////////////////////////////////
+
+goToGame.addEventListener('click', function () {
+  rulesGame.classList.add('none');
+});
+
+wachRules.addEventListener('click', function () {
+  rulesGame.classList.toggle('none');
+  goToGame.textContent = 'зрозуміло';
+});
+
+namePlayers0.addEventListener('click', function () {
+  namePlayers0.textContent =
+    prompt("Введіть ім'я першого гравця") || 'Гравець 1';
+});
+namePlayers1.addEventListener('click', function () {
+  namePlayers1.textContent =
+    prompt("Введіть ім'я другого гравця") || 'Гравець 2';
 });
