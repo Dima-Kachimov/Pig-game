@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Свинья</title>
-  </head>
-  <body>
-    <section class="control">
-      <button class="btn-wach-rules">нагадати правила</button>
-    </section>
-    <main>
-      <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Гравець 1</h2>
-        <p class="score" id="score--0">47</p>
-        <div class="current">
-          <p class="current-label">ПОТОЧНИЙ РАХУНОК</p>
-          <p class="current-score" id="current--0">0</p>
-        </div>
-      </section>
-      <section class="player player--1">
-        <h2 class="name" id="name--1">Гравець 2</h2>
-        <p class="score" id="score--1">31</p>
-        <div class="current">
-          <p class="current-label">ПОТОЧНИЙ РАХУНОК</p>
-          <p class="current-score" id="current--1">0</p>
-        </div>
-      </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Свинья</title>
+    </head>
+    <body>
+        <section class="control">
+            <button class="btn-wach-rules">нагадати правила</button>
+        </section>
+        <main>
+            <section class="player player--0 player--active">
+                <h2 class="name" id="name--0">Гравець 1</h2>
+                <p class="score" id="score--0">47</p>
+                <div class="current">
+                    <p class="current-label">ПОТОЧНИЙ РАХУНОК</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+            <section class="player player--1">
+                <h2 class="name" id="name--1">Гравець 2</h2>
+                <p class="score" id="score--1">31</p>
+                <div class="current">
+                    <p class="current-label">ПОТОЧНИЙ РАХУНОК</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
 
-      <img src="dice1.png" alt="Playing dice" class="dice" />
-      <button class="btn btn--new">🐷 Нова гра</button>
-      <button class="btn btn--roll">🎲 Кинути кубик</button>
-      <button class="btn btn--hold">👌 Залишити</button>
-    </main>
+            <img src="dice1.png" alt="Playing dice" class="dice" />
+            <button class="btn btn--new">🐷 Нова гра</button>
+            <button class="btn btn--roll">🎲 Кинути кубик</button>
+            <button class="btn btn--hold">👌 Залишити</button>
+        </main>
 
-    <section class="rules">
-      <div class="rules__wrap">
-        <div class="rules__inner">
-          <div class="rules__title"><h2>правила цієї гри</h2></div>
-          <div class="rules__content">
-            <ul>
-              <li>Грають два гравці</li>
-              <li>Бали після кидка кубика зараховуються в поточний рахунок</li>
-              <li>
-                Якщо тобі випало на кубику (один) то твій поточний рахунок
-                ставатиме (нуль) і хід переходить іншому гравцю
-              </li>
-              <li>
-                Ти можеш з поточного рахунку додати бали в основний (Натиснувши
-                на кнопку ЗАЛИШИТИ) в цьому випадку ти зберігаєш бали з
-                поточного рахунку і хід переходить іншому гравцю
-              </li>
-              <li>Твоя ціль зібрати 50 очок першим</li>
-            </ul>
-          </div>
-          <button class="btn-rules">ПОЧАТИ ГРУ</button>
-        </div>
-      </div>
-    </section>
+        <section class="rules">
+            <div class="rules__wrap">
+                <div class="rules__inner">
+                    <div class="rules__title"><h2>правила цієї гри</h2></div>
+                    <div class="rules__content">
+                        <ul>
+                            <li>Грають два гравці</li>
+                            <li>
+                                Бали після кидка кубика зараховуються в поточний
+                                рахунок
+                            </li>
+                            <li>
+                                Якщо тобі випало на кубику (один) то твій
+                                поточний рахунок ставатиме (нуль) і хід
+                                переходить іншому гравцю
+                            </li>
+                            <li>
+                                Ти можеш з поточного рахунку додати бали в
+                                основний (Натиснувши на кнопку ЗАЛИШИТИ) в цьому
+                                випадку ти зберігаєш бали з поточного рахунку і
+                                хід переходить іншому гравцю
+                            </li>
+                            <li>Твоя ціль зібрати 50 очок першим</li>
+                        </ul>
+                    </div>
+                    <button class="btn-rules">ПОЧАТИ ГРУ</button>
+                </div>
+            </div>
+        </section>
 
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+    </body>
 </html>
